@@ -28,17 +28,17 @@ An exploratory data analysis of delivery performance on the Olist Brazilian e-co
 
 [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle): **99,441 orders** placed between 2016 and 2018, spread over several related tables.
 
-| File 					| Used for |
-|---					|---|
-| `olist_orders_dataset.csv` 		| Order status and timestamps |
-| `olist_order_reviews_dataset.csv` 	| Review scores |
-| `olist_customers_dataset.csv` 	| Loaded and checked |
-| `olist_geolocation_dataset.csv` 	| Cleaned, one row per ZIP prefix, for future map analysis |
-| `olist_order_items_dataset.csv`,
-  `olist_order_payments_dataset.csv`, 
-  `olist_products_dataset.csv`,
-  `olist_sellers_dataset.csv`, 
-  `product_category_name_translation.csv`| Loaded and checked, not yet analysed |
+| File 					                        | Used for |
+|---					                          |---|
+| `olist_orders_dataset.csv` 		        | Order status and timestamps |
+| `olist_order_reviews_dataset.csv` 	  | Review scores |
+| `olist_customers_dataset.csv` 	      | Loaded and checked |
+| `olist_geolocation_dataset.csv` 	    | Cleaned, one row per ZIP prefix, for future map analysis |
+| `olist_order_items_dataset.csv`       | Loaded and checked, not yet analysed |
+| `olist_order_payments_dataset.csv`    | Loaded and checked, not yet analysed |
+| `olist_products_dataset.csv`          | Loaded and checked, not yet analysed |
+| `olist_sellers_dataset.csv`           | Loaded and checked, not yet analysed |
+|`product_category_name_translation.csv`| Loaded and checked, not yet analysed |
 
 The data is not included in this repository. Download it from Kaggle (see *How to Run*).
 
@@ -64,11 +64,11 @@ The data is not included in this repository. Download it from Kaggle (see *How t
 - Delivery time (purchase to customer): **median 10.2 days**, mean 12.6 days, Q1 6.8 days, Q3 15.7 days, maximum 209.6 days. The mean is higher than the median because of a small group of very slow orders.
 
 | Delivery time 	| Orders 		| Share	 |
-|---			|---			|---	 |
+|---			        |---			  |---	   |
 | Up to 7 days 		| 26,046 		| 27.0%  |
-| 7-14 days 		| 40,212 		| 41.7%  |
-| 14-30 days 		| 25,662 		| 26.6%  |
-| 30-60 days 		| 4,244 		| 4.4%   |
+| 7-14 days 		  | 40,212 		| 41.7%  |
+| 14-30 days 		  | 25,662 		| 26.6%  |
+| 30-60 days 		  | 4,244 		| 4.4%   |
 | Over 60 days 		| 306 			| 0.3%   |
 
 **68.7%** of orders arrived within 14 days, and **4.7%** (4,550 orders) took more than 30 days.
@@ -82,17 +82,17 @@ The data is not included in this repository. Download it from Kaggle (see *How t
 
 ### 3. Monthly trend (by purchase month)
 
-| Period 	| Late rate 			| Note 						|
-|---		|---				|---						|
-| Jan-Oct 2017 	| 2.8% to 6.6% 			| Stable. Highest was April 2017 (6.56%) 	|
-| **Nov 2017** 	| **12.40%** (904 of 7,288) 	| Highest order volume of any month 		|
-| Dec 2017 - 
-     Jan 2018 	| 7.46% and 5.70% 		| Partial recovery 				|
-| **Feb 2018** 	| **14.13%** (926 of 6,555) 	| Median delivery time peaked at 14.3 days 	|
-| **Mar 2018** 	| **18.96%** (1,328 of 7,003) 	| Worst month in the data 			|
-| Apr 2018 	| 4.50% 			| Sharp improvement 				|
-| Jun 2018 	| 1.16% 			| Best month 					|
-| Aug 2018 	| 6.19% 			| Median delivery time 7.0 days, the lowest 	|
+| Period 	          | Late rate 			            | Note 						                             |
+|---		            |---				                  |---						                               |
+| Jan-Oct 2017 	    | 2.8% to 6.6% 		            | Stable. Highest was April 2017 (6.56%) 	     |
+| **Nov 2017** 	    | **12.40%** (904 of 7,288)   | Highest order volume of any month 		       |                      	
+| Jan 2018 	        | 7.46% and 5.70%             | Partial recovery 				                     |
+| **Feb 2018** 	    | **14.13%**(926 of 6,555)  	| Median delivery time peaked at 14.3 days 	   |
+                      
+| **Mar 2018** 	    | **18.96%** (1,328 of 7,003) | Worst month in the data 			               |
+| Apr 2018 	        | 4.50% 			                | Sharp improvement 				                   |
+| Jun 2018 	        | 1.16% 			                | Best month 					                         |
+| Aug 2018 	        | 6.19% 			                | Median delivery time 7.0 days, the lowest 	 |
 
 The jump in late deliveries followed the record order volume in November 2017, which may point to a capacity problem. The data alone cannot prove the cause.
 
